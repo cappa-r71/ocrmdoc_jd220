@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cappa-r71-ocrmdoc_jd220"
+version = "0.1.0"
+description = "按结构键把条目聚类，标出OCR 文档理解工程师·投机解码的命中率上的同组项与各组的代表样本"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "cappa-r71" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://cappa-r71.github.io"
+Repository = "https://github.com/cappa-r71/ocrmdoc_jd220"
+Issues = "https://github.com/cappa-r71/ocrmdoc_jd220/issues"
+
+[project.scripts]
+ocrmdoc_jd220 = "ocrmdoc_jd220:main"
+
+[tool.setuptools]
+py-modules = ["ocrmdoc_jd220"]
